@@ -1,0 +1,32 @@
+{
+    "name": "funt-core",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-ts": "tsc",
+        "lint": "tslint -c tslint.json -p tsconfig.json --fix",
+        "copy-package-json": "copyfiles package.json \"./dist\"",
+        "doc": "typedoc --out docs/src/ --readme ./README.md",
+        "build": "npm run lint && npm run build-ts && npm run copy-package-json"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^12.7.4",
+        "copyfiles": "^2.1.1",
+        "prettier": "^1.18.2",
+        "ts-node": "^8.3.0",
+        "tslint": "^5.19.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-plugin-prettier": "^2.0.1",
+        "typedoc": "^0.15.0",
+        "typescript": "^3.6.2"
+    },
+    "dependencies": {
+        "class-transformer": "^0.2.3",
+        "class-validator": "^0.10.0",
+        "reflect-metadata": "^0.1.13"
+    }
+}

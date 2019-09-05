@@ -1,0 +1,52 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-prettier",
+        "tslint-plugin-prettier"
+    ],
+    "defaultSeverity": "error",
+    "rules": {
+        "prettier": [true, ".prettierrc.json"],
+        "arrow-parens": false,
+        "arrow-return-shorthand": [false],
+        "import-blacklist": [true, "rxjs", "lodash"],
+        "interface-over-type-literal": true,
+        "interface-name": false,
+        "member-access": true,
+        "member-ordering": [true, { "order": "fields-first" }],
+        "no-any": false,
+        "no-empty-interface": false,
+        "no-inferrable-types": [true, "ignore-params", "ignore-properties"],
+        "no-invalid-this": [true, "check-function-in-method"],
+        "no-namespace": false,
+        "no-null-keyword": false,
+        "no-require-imports": false,
+        "no-submodule-imports": [true, "rxjs", "lodash"],
+        "no-this-assignment": [true, { "allow-destructuring": true }],
+        "no-shadowed-variable": false,
+        "object-literal-sort-keys": false,
+        "object-literal-shorthand": false,
+        "one-variable-per-declaration": true,
+        "only-arrow-functions": [false, "allow-declarations"],
+        "ordered-imports": [
+            false,
+            {
+                "grouped-imports": true
+            }
+        ],
+        "prefer-method-signature": true,
+        "prefer-template": [true, "allow-single-concat"],
+        "triple-equals": [true, "allow-null-check"],
+        "typedef": [true, "property-declaration"],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-pascal-case",
+            "allow-leading-underscore"
+        ],
+        "max-classes-per-file": false,
+        "no-debugger": false,
+        "no-console": false
+    }
+}
