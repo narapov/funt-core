@@ -8,7 +8,7 @@
         "build-ts": "tsc",
         "lint": "tslint -c tslint.json -p tsconfig.json --fix",
         "copy-package-json": "copyfiles package.json \"./dist\"",
-        "doc": "typedoc --out docs/src/ --readme ./README.md",
+        "doc": "typedoc --out docs --readme ./README.md",
         "build": "npm run lint && npm run build-ts && npm run copy-package-json"
     },
     "author": "",
