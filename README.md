@@ -9,6 +9,4 @@ commands:
     npm run build
     # create auto generated documentation in ./docs folder
     npm run doc
-    # creating a stub for the specified methods in the specified /api subfolder
-    npm run generate-api-method-params-stub apiMethodName1 [apiMethodName] apiSubfolderName
 ```
