@@ -25,7 +25,7 @@
         "typescript": "^3.6.2"
     },
     "dependencies": {
-        "class-transformer": "^0.2.3",
+        "class-transformer": "^0.3.1",
         "class-validator": "^0.10.0",
         "reflect-metadata": "^0.1.13"
     }
